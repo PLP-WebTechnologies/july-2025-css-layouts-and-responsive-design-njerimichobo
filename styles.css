@@ -1,0 +1,75 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+header {
+  background: #8e6edd;
+  color: rgb(224, 221, 234);
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+
+main section {
+  margin: 20px 0;
+  background: white;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.skills-grid div {
+  background: #8c86c8;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 10px;
+  background: #99efda;
+  color: rgb(14, 136, 173);
+  border-radius: 4px;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
